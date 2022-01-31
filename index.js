@@ -13,6 +13,12 @@ function carousel() {
 
             // showing image 
             document.getElementsByClassName('carouselImage')[storeValue].style.display = 'block';
+
+            // hidden carouselBody 
+            document.getElementsByClassName('carouselBody')[storeValue-1].style.display = 'none';
+
+            // showing carouselBody 
+            document.getElementsByClassName('carouselBody')[storeValue].style.display = 'block';
             
             // incresing value
             storeValue++
@@ -26,6 +32,12 @@ function carousel() {
             // showing image 
             document.getElementsByClassName('carouselImage')[0].style.display = 'block';
 
+            // hidden carouselBody 
+            document.getElementsByClassName('carouselBody')[imageLength-1].style.display = 'none';
+
+            // showing carouselBody
+            document.getElementsByClassName('carouselBody')[0].style.display = 'block';
+
             // incresing value
             storeValue++
             // store a new storeValue
@@ -37,6 +49,11 @@ function carousel() {
             document.getElementsByClassName('carouselImage')[imageLength-1].style.display = 'none';
             // index no 1
             document.getElementsByClassName('carouselImage')[storeValue].style.display = 'block';
+
+            // hidden carouselBody
+            document.getElementsByClassName('carouselBody')[imageLength-1].style.display = 'none';
+            // index no 1 carouselBody
+            document.getElementsByClassName('carouselBody')[storeValue].style.display = 'block';
 
             // store a new storeValue
             return storeValue
